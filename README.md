@@ -44,13 +44,14 @@ Key CBD interchanges get a 2.8× boarding surge, and existing train load gets a 
 
 ### 🔹 Strategy Metrics
 Every strategy runs through the same pipeline so we’re comparing apples to apples:
-Overflow - max(0, demand - capacity) - How many pax/hr get left behind
-Congestion - load / 1200 - How squished the train is (1.0 = full, >1.0 = shoulder surfing)
-Avg Wait - headway / 2 - Statistical average wait (you arrive halfway between trains)
-Throughput - sum(min(demand, capacity)) - How many people actually get moved
-Transfer Safety - Qualitative score (1–5) - Does this strategy strand interchange passengers?
 
-- All 6 strategies are evaluated against these exact metrics. No vibes. Just math.
+- Overflow - max(0, demand - capacity) - How many pax/hr get left behind
+- Congestion - load / 1200 - How squished the train is (1.0 = full, >1.0 = shoulder surfing)
+- Avg Wait - headway / 2 - Statistical average wait (you arrive halfway between trains)
+- Throughput - sum(min(demand, capacity)) - How many people actually get moved
+- Transfer Safety - Qualitative score (1–5) - Does this strategy strand interchange passengers?
+
+All 6 strategies are evaluated against these exact metrics. No vibes. Just math.
 
 ### 🚀 How to Run It
 
