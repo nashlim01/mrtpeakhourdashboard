@@ -697,9 +697,9 @@ function App() {
           {tab === "verdict" && strategies && (
             <div id="tab-verdict" role="tabpanel" aria-labelledby="tab-btn-verdict">
               <div className="panel" style={{ background: "var(--panel2)", borderColor: "color-mix(in srgb, var(--accent) 20%, var(--border))", marginBottom: "1rem", fontSize: "0.6875rem", color: "var(--text-muted)", lineHeight: 1.9 }}>
-                Analysis uses <strong style={{ color: "var(--text)" }}>actual PM peak boarding volumes</strong> from the dataset.
+                Analysis uses <strong style={{ color: "var(--text)" }}>approximate PM peak boarding volumes</strong> from the dataset.
                 Disruption mode applies a 2.8× multiplier to CBD interchange boarding.
-                Train capacity: <strong style={{ color: "var(--amber)" }}>{TRAIN_CAP} pax</strong> (Putrajaya Line 6-car set) · Comfortable: <strong style={{ color: "var(--green)" }}>{COMFORTABLE} pax</strong>.
+                Train capacity: <strong style={{ color: "var(--amber)" }}>{TRAIN_CAP} pax</strong> (Kajang Line 6-car set) · Comfortable: <strong style={{ color: "var(--green)" }}>{COMFORTABLE} pax</strong>.
                 <br/>Single-track end-to-end assumption: 2 trains/direction, layover penalties included.
               </div>
 
